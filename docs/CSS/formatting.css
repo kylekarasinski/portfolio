@@ -1,41 +1,119 @@
+/* Body */
 body {
-    /*Image source: Photo by Stephan Seeber from Pexels: https://www.pexels.com/photo/snow-top-mountain-under-clear-sky-1054218/*/
     background-image: url('../Assets/Pictures/background.jpg');
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     font-family: 'Karla';
     font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
 }
 
-header {
+/* Nav */
+nav {
     font-family: 'Josefin Sans';
-    width: 60%;
+    width: 80%; /* Increase width for better responsiveness */
     text-align: center;
     border: 3px solid #000000;
     padding: 15px;
-    margin-bottom: 4%;
-    margin-left: 19%;
+    margin: 2% auto; /* Center align the nav */
     border-radius: 20px;
+    display: flex;           /* Enable flexbox layout */
+    justify-content: space-evenly;  /* Evenly space the links */
+    align-items: center;     /* Vertically center the links */
 }
 
+/* Links in nav */
 #fileLink {
     border: 3px solid #000000;
-    margin: 20px;
     color: black;
     background-color: #ffffff;
     padding: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
     border-radius: 20px;
     text-decoration: none;
+    display: inline-block;   /* Make sure the links are inline elements */
+}
+
+/* Resume Section */
+#resume {
+    margin-left: 22.5%; /* Corrected margin */
 }
 
 #resume {
-    margin-left: 22.5%;
+    width: 100%;         /* Makes the container take up full width of its parent */
+    max-width: 1000px;   /* Ensures that the iframe doesn't get too large */
+    margin: 0 auto;      /* Centers the container horizontally */
 }
 
+#resume iframe {
+    width: 100%;         /* Makes the iframe take up the full width of its container */
+    height: 100vh;       /* Makes the iframe height take up the full viewport height */
+    border: none;        /* Removes the border around the iframe */
+}
+
+/* Video Element Styling */
+video {
+    width: 100%;        /* Make videos take up the full width of their container */
+    max-width: 640px;   /* Set a max width to prevent videos from getting too large */
+    height: auto;       /* Maintain aspect ratio */
+    display: block;     /* Makes the video behave like a block-level element */
+    margin-right: auto;    /* Center the video horizontally */
+    border-radius: 10px; /* Optional: to add rounded corners to the video */
+}
+
+
+/* Main sections */
 #contacts, #aboutMe, #skills, #certifications, #projects, #jobDesc {
-    border-radius: 40px;
+    border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.781);
     padding: 3%;
-    margin-left: 18%;
-    margin-right: 18%;
+    margin-left: 5%; /* More margin for mobile */
+    margin-right: 5%; /* More margin for mobile */
+}
+
+/* Media Queries for Mobile Devices */
+@media screen and (max-width: 768px) {
+    body {
+        background-image: url('../Assets/Pictures/background.jpg');
+        background-size: cover;
+        background-position: center;
+        font-family: 'Karla';
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Nav adjustments */
+    nav {
+        width: 95%; /* Use more width for smaller screens */
+        margin-left: 2%;
+        margin-right: 2%;
+        flex-direction: column;  /* Stack the links vertically on small screens */
+        align-items: flex-start; /* Align links to the left when stacked */
+    }
+
+    /* Adjust font size for readability */
+    body {
+        font-size: 1.2rem;
+    }
+
+    /* Make the sections more compact */
+    #contacts, #aboutMe, #skills, #certifications, #projects, #jobDesc {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 4%;
+    }
+
+    /* Adjust links */
+    #fileLink {
+        padding: 8px;
+        margin: 10px;
+    }
+
+    /* Adjust Resume Margin for Mobile */
+    #resume {
+        margin:0%;
+    }
 }
