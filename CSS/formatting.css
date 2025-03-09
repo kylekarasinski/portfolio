@@ -1,0 +1,41 @@
+body {
+    /*Image source: Photo by Stephan Seeber from Pexels: https://www.pexels.com/photo/snow-top-mountain-under-clear-sky-1054218/*/
+    background-image: url('../Assets/Pictures/background.jpg');
+    background-size:cover;
+    background-position: center;
+    font-family: 'Karla';
+    font-size: 1.5rem;
+}
+
+header {
+    font-family: 'Josefin Sans';
+    width: 60%;
+    text-align: center;
+    border: 3px solid #000000;
+    padding: 15px;
+    margin-bottom: 4%;
+    margin-left: 19%;
+    border-radius: 20px;
+}
+
+#fileLink {
+    border: 3px solid #000000;
+    margin: 20px;
+    color: black;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#resume {
+    margin-left: 22.5%;
+}
+
+#contacts, #aboutMe, #skills, #certifications, #projects, #jobDesc {
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.781);
+    padding: 3%;
+    margin-left: 18%;
+    margin-right: 18%;
+}
