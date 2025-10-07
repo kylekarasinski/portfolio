@@ -1,0 +1,78 @@
+#aboutMeDiv {
+    padding-top: 2.5%;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.profile-img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 20rem;
+}
+
+.profile-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-text h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.profile-text h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.profile-button a {
+    font-size: 1.3rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #1f1f1f;
+}
+
+.bio {
+    padding-top: 3%;
+    font-size: 1.7rem;
+}
+
+#skillsDiv {
+    margin-top: 2.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+
+#certifsDiv {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+#certLink {
+    text-decoration: none;
+    color: #212529;
+}
+
+#certLink:hover {
+    text-decoration: underline;
+}

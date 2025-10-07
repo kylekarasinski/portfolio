@@ -1,0 +1,51 @@
+body {
+    font-family: "Cabin", sans-serif;
+    color: white;
+    background-image: url("../Assets/Images/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.sectionHeader {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.subHeader {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.profile-button .btn {
+    transition: all 0.3s ease;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.5rem;
+}
+
+.profile-button .btn:hover {
+    transform: scale(1.1);
+    background-color: #1f1f1f;
+    color: white;
+}
+
+.clipart-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clipart-img {
+    width: 40px;
+    height: 40px;
+}

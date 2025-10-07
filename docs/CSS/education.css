@@ -1,0 +1,25 @@
+#educationTimeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.school {
+    background-color: #1f1f1f;
+    border-radius: 12px;
+    padding: 1.5rem;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.education-date {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.arrow {
+    font-size: 2rem;
+    color: #ffffff;
+}

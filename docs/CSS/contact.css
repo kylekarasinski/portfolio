@@ -1,0 +1,21 @@
+#contactDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 3%;
+}
+
+#contactDiv .btn {
+    font-size: 2rem;
+    padding: 2rem 6rem;
+    transition: all .3 ease;
+}
+
+#contactDiv .btn:hover {
+    transform: scale(1.1);
+}
+
+#contactDiv a {
+    text-decoration: none;
+}
