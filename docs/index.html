@@ -23,13 +23,18 @@
   </head>
 
     <script>
-        document.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', e => {
+        document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.nav-link[data-target]').forEach(link => {
+            link.addEventListener('click', e => {
             e.preventDefault();
-            const target = document.getElementById(link.dataset.target);
-            if (target) {
-            target.scrollIntoView({ behavior: 'smooth' });
-            }
+            const id = link.dataset.target;
+            const target = document.getElementById(id);
+            if (!target) return;
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            target.setAttribute('tabindex', '-1');
+            target.focus({ preventScroll: true });
+            setTimeout(() => target.removeAttribute('tabindex'), 1000);
+            });
         });
         });
     </script>
@@ -41,11 +46,11 @@
       <div id="navDiv">
         <nav class="navbar">
             <div class="container">
-                <a class="nav-link" data-target="aboutMeDiv">About Me</a>
-                <a class="nav-link" data-target="jobHeader">Experience</a>
-                <a class="nav-link" data-target="educationHeader">Education</a>
-                <a class="nav-link" data-target="projectsHeader">Projects</a>
-                <a class="nav-link" data-target="contactHeader">Contact</a>
+                <a class="nav-link" href="#" data-target="aboutMeDiv">About Me</a>
+                <a class="nav-link" href="#" data-target="jobHeader">Experience</a>
+                <a class="nav-link" href="#" data-target="educationHeader">Education</a>
+                <a class="nav-link" href="#" data-target="projectsHeader">Projects</a>
+                <a class="nav-link" href="#" data-target="contactHeader">Contact</a>
             </div>
         </nav>
 
