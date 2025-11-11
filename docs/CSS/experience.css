@@ -27,3 +27,30 @@
     width: 80%;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
+
+/* --- Mobile Optimization --- */
+@media (max-width: 768px) {
+    .job {
+        width: 90%;
+        padding: 1.25rem;
+    }
+
+    .arrow {
+        padding-bottom: 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .job {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    .card {
+        border-radius: 8px;
+    }
+
+    .arrow {
+        font-size: 1.25rem;
+    }
+}

@@ -22,17 +22,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
   </head>
 
+    <script>
+        document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', e => {
+            e.preventDefault();
+            const target = document.getElementById(link.dataset.target);
+            if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+        });
+    </script>
+
+
   <body>
     <header>
 
       <div id="navDiv">
         <nav class="navbar">
             <div class="container">
-                <a class="nav-link" href="#aboutMeDiv">About Me</a>
-                <a class="nav-link" href="#jobHeader">Experience</a>
-                <a class="nav-link" href="#educationHeader">Education</a>
-                <a class="nav-link" href="#projectsHeader">Projects</a>
-                <a class="nav-link" href="#contactHeader">Contact</a>
+                <a class="nav-link" data-target="aboutMeDiv">About Me</a>
+                <a class="nav-link" data-target="jobHeader">Experience</a>
+                <a class="nav-link" data-target="educationHeader">Education</a>
+                <a class="nav-link" data-target="projectsHeader">Projects</a>
+                <a class="nav-link" data-target="contactHeader">Contact</a>
             </div>
         </nav>
 
